@@ -1,0 +1,6 @@
+import scapy.all as scapy
+
+# Menampilkan daftar interface yang tersedia
+interfaces = scapy.ifaces
+for i in interfaces:
+    print(i, "->", scapy.ifaces[i].name)
